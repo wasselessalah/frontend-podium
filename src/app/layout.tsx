@@ -1,17 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { SessionProvider } from "next-auth/react";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Podium de Concours - BDE MIAGE PARIS CITé",
@@ -46,9 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="antialiased">
         <SessionProvider>{children}</SessionProvider>
       </body>
     </html>
