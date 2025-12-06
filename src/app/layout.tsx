@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { SessionProvider } from "next-auth/react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -28,7 +28,11 @@ export const metadata: Metadata = {
     "développement durable",
   ],
   authors: [{ name: "BDE MIAGE PARIS CITé" }],
-  viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
     { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
