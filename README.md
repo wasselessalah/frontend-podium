@@ -31,7 +31,7 @@ git clone <url-du-repository>
 cd frontend-podium
 
 # Ou accédez au dossier existant
-cd /home/wassel/project/nuit_info/poduim2/pod/frontend-podium
+cd ./frontend-podium
 ```
 
 ### Étape 2️⃣ : Installer les dépendances
